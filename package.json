@@ -114,7 +114,7 @@
   "scripts": {
     "eslint": "eslint .",
     "prettier": "prettier -c .",
-    "types": "rimraf *.d.ts *.d.mts && tsc -p jsconfig.json && rimraf *test.d.ts *test.d.mts",
+    "types": "rimraf *.d.ts *.d.mts && tsc -p jsconfig.json",
     "tests": "coverage-node --unhandled-rejections=throw test.mjs",
     "test": "npm run eslint && npm run prettier && npm run types && npm run tests",
     "prepublishOnly": "npm test"
